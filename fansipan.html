@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đỉnh Fansipan</title>
+    <style>
+        body { margin: 0; font-family: Times New Roman, sans-serif; text-align: center; }
+        .header { background: lightgreen; padding: 20px; font-size: 24px; font-weight: bold;color:darkgreen; }
+        .navbar { background: darkgreen; padding: 10px; }
+        .navbar a { color: darkgreen; padding: 10px 20px; display: inline-block; background: lightgreen; margin: 0 5px; }
+        .content { background: white; padding: 50px; }
+        .content h2 { margin: 0; }
+        .content h3 {margin: 0; align-content: center;font-size: 20px}
+        .content p {font-size: 20px}
+        .content form {font-size: 20px}
+        .content1 {display: inline-block;}
+        .footer { background: darkgreen; color: white; padding: 10px; margin-top: 20px; }
+        .img { max-width: 100%; height: auto; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">ĐỈNH FANSIPAN - SAPA, LÀO CAI</div>
+    <div class="navbar">
+        <a href="https://fansipanlegend.sunworld.vn/">Trang chủ</a>
+        <a href="https://fansipanlegend.sunworld.vn/gioi-thieu">Giới thiệu</a>
+        <a href="https://fansipanlegend.sunworld.vn/trai-nghiem">Trải nghiệm</a>
+        <a href="https://fansipanlegend.sunworld.vn/tro-giup">Trợ giúp</a>
+        <a href="https://fansipanlegend.sunworld.vn/lien-he">Liên hệ</a>
+    </div>
+    <div class="content">
+        <h2>FANSIPAN - Nóc nhà của Đông Dương</h2>
+        <br>
+        <h3>Đối với những người yêu thích mạo hiểm, việc chinh phục đỉnh Fansipan là một trải nghiệm không thể bỏ qua. Với quang cảnh tuyệt đẹp từ trên cao, bạn sẽ được thưởng ngoạn toàn cảnh dãy núi Hoàng Liên Sơn trùng điệp, những thung lũng mờ sương và những cánh rừng nguyên sinh kỳ vĩ.</h3>
+        <br>
+        <img src="fansipan.png" alt="Đỉnh Fansipan">
+        <p>Hành trình lên đỉnh Fansipan có thể mất từ 2 đến 3 ngày đối với các trekker, nhưng với sự phát triển của hệ thống cáp treo Fansipan, chuyến đi giờ đây trở nên dễ dàng hơn rất nhiều. Cáp treo Fansipan không chỉ giúp rút ngắn thời gian lên đỉnh mà còn cho phép bạn chiêm ngưỡng cảnh quan thiên nhiên tuyệt đẹp, từ những rừng cây nguyên sinh đến những đám mây bồng bềnh giữa núi.</p>
+        <br>
+        <p>Không chỉ là điểm đến dành cho những tín đồ ưa mạo hiểm, Fansipan còn là một khu du lịch hấp dẫn với các công trình kiến trúc đặc sắc như chùa Trình, tượng Phật Bà Quan Âm, cùng với các hoạt động giải trí, văn hóa phong phú. Fansipan Legend là nơi bạn có thể thưởng thức những món ăn đặc sản Tây Bắc, tham gia các lễ hội văn hóa và tìm hiểu về những nét đẹp truyền thống của các dân tộc thiểu số.</p>
+    </div>
+    <div class="content1">
+        <h3 style="color: darkgreen;">THÔNG TIN MUA VÉ</h3>
+        <h3>Thông tin người mua</h3>
+        <label for="name">Họ và tên:</label>
+        <input type="text" name="hovaten" required>
+        <label for="phone">SĐT:</label>
+        <input type="text" name="sdt" required>
+        <label for="email">Địa chỉ Email:</label>
+        <input type="email" name="email" required>
+        <br>
+        <h3>Ngày đi - ngày về</h3>
+        <label for="ngaydi">Ngày đi:</label>
+        <input type="date" name="ngaydi">
+        <label for="ngayve">Ngày về:</label>
+        <input type="date" name="ngayve">
+        <br>
+        <h3>Hạng vé</h3>
+        <select id="hangve" name="hangve">
+            <option value="vecoban">Vé cơ bản</option>
+            <option value="vetrongoi">Vé trọn gói</option>
+        </select>
+        <br>
+        <h3>Số lượng</h3>
+        <label for="nguoilon">Người lớn:</label>
+        <input type="text" name="nguoilon">
+        <label for="treem">Trẻ em:</label>
+        <input type="text" name="treem">
+        <br>
+        <h3>Ghi chú</h3>
+        <label for="ghichu">Ghi chú:</label>
+        <textarea id="ghichu" name="ghichu" rows="3" cols="18"></textarea>
+        <br>
+        <h3>Quà tặng</h3>
+        <input id="Capybaradoll" type="radio" name="gift" value="Capybaradoll" required>
+        <label for="Capybaradoll">Thú nhồi bông Capybara</label>
+        <br>
+        <input id="North-WestVietnamguide" type="radio" name="gift" value="North-WestVietnamguide">
+        <label for="North-WestVietnamguide">Sổ tay cẩm năng du lịch Tây Bắc Việt Nam</label>
+        <br>
+        <input id="Calendar" type="radio" name="gift" value="Calendar">
+        <label for="Calendar">Lịch để bàn (ngẫu nhiên)</label>
+        <br>
+        <h3>Xác nhận</h3>
+        <input type="submit" value="Nhận email">
+    </div>
+    <div class="content">
+        <p align="middle" style="color:darkgreen;"><i><b>- Chúc quý khách có chuyến tham quan vui vẻ -</b></i></p>
+    </div>
+    <div class="footer">© 2025 Đỉnh Fansipan, thị xã Sa Pa, Lào Cai, Việt Nam.</div>
+</body>
+</html>
